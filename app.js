@@ -1,13 +1,13 @@
 console.log('Cozy Cafe JavaScript is connected!');
  
 
-const mainTitle = document.querySelector('#main-title');
-mainTitle.textContent = 'Welcome to the Cozy Cafe'
+const mainTitleEl = document.querySelector('#main-title');
+mainTitleEl.textContent = 'Welcome to the Cozy Cafe'
 
 
 const highlightTitleEls = document.querySelectorAll('.highlight-title');
 highlightTitleEls.forEach((highlightTitleEl) => {
-    console.log(highlightTitleEl);
+    console.log(highlightTitleEl.textContent);
     highlightTitleEl.style.fontStyle = 'italic';
 });
 
@@ -18,8 +18,9 @@ qute.classList.add('featured');
 
 
 const mainPhoto=document.querySelector('#main-photo');
+console.log(mainPhoto.getAttribute('src'));
 mainPhoto.setAttribute('src', './assets/berry-cake.jpg');
-mainPhoto.setAttribute('alt', 'A berry cake served at the cafe');
+mainPhoto.setAttribute('alt', 'A berry cake served at the caٍfe');
 
 
 
