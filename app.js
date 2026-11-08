@@ -32,3 +32,26 @@ function handleBackgroundChange() {
 }
 bgColorBtnel.addEventListener('click', handleBackgroundChange);
 
+const rose = document.querySelector('#rose-latte') 
+const croissant = document.querySelector('#croissant')
+const chesseCake = document.querySelector('#cheesecake')
+rose.textContent = 'Available'
+croissant.textContent = 'Sold Out'
+chesseCake.textContent = 'Available'
+
+const btn0 = document.getElementById('0')
+const btn1 = document.getElementById('1')
+const btn2 = document.getElementById('2')
+function soldOut() {
+  if (this.id =='0') {
+    rose.textContent = 'Sold Out' }
+  
+  else if (this.id == '1') {
+    croissant.textContent = 'Sold Out'} 
+
+  else if (this.id == '2') {
+    chesseCake.textContent = 'Sold Out' }
+}
+btn0.addEventListener('click', soldOut)
+btn1.addEventListener('click', soldOut)
+btn2.addEventListener('click', soldOut)
